@@ -1,0 +1,16 @@
+<table border=1>
+    
+    <tr>
+    {% for i in result[0] %}
+    <th>{{i}}</th>
+    {% endfor %}
+    </tr>
+    {% for i in result %}
+    <tr>
+        {% for j in i %}
+        <td>{{i[j]}}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+<br><br><button style="height: 50px; width: 100px" onclick="window.location.href='/'">BACK</button>
